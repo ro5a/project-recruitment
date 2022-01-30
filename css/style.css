@@ -32,6 +32,7 @@ padding: 10px;
     justify-content: space-around;
     background-color: #fafafa;
     padding: 30px;
+position: relative;
    
 }.flex1 ul li{
 list-style: none;
@@ -48,4 +49,9 @@ list-style: none;
     
     border-radius: 5px;
   
+}
+.margin{
+    margin-left: 200px;
+    margin-top: 40px;
+
 }
