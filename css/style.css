@@ -19,3 +19,33 @@ padding: 10px;
 .card{
     margin: 10px;
 }
+.title{
+    margin: 40px;
+}
+.row{
+    width: 80%;
+    margin: 50px;
+}
+.flex1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fafafa;
+    padding: 30px;
+   
+}.flex1 ul li{
+list-style: none;
+}
+.text {
+    text-align: center;
+}
+.copy{text-align: center;
+    padding: 10px;
+
+}
+.row{
+    box-shadow: 5px 0px 10px #888888;
+    
+    border-radius: 5px;
+  
+}
