@@ -11,3 +11,11 @@ border: 1px solid #233d7b;
 border-radius: 5px;
 padding: 10px;
 }
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    margin: 10px;
+}
