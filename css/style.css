@@ -1,10 +1,13 @@
 .navbar{
-    background-color: #233d7b;
+    background-color: #163760;
     
  
   
 }
 
-.navbar-collapse{
-    color: #fff;
+.bg-btn{
+background-color: #233d7b;
+border: 1px solid #233d7b;
+border-radius: 5px;
+padding: 10px;
 }
