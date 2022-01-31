@@ -14,19 +14,19 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#" style="color: #fb236a;font-weight: bolder;font-size: 30px;">
+              <a class="navbar-brand navbar-left" href="#" style="color: #fbe523;font-weight: bolder;font-size: 30px;">
                Jobs
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav   me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav   nav navbar-center">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  style="color: #fff;" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page"  style="color: #fff;" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color: #fff;" href="#">Careers</a>
+                    <a class="nav-link" style="color: #fff;" href="career.html">Careers</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" style="color: #fff;" href="#">Our services</a>
@@ -42,24 +42,60 @@
                   <li class="nav-item">
                     <a class="nav-link"  style="color: #fff;" href="#">Contuct us</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  style="color: #fff;" href="#">Subscriptions </a>
-                  </li>
-                  <li class="nav-item">
-                   <a class="nav-link"  style="color: #fff;" > <i class="fa fa-user"></i>Login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  style="color: #fff;" >Register</a>
-                  </li>
-                  <li class="nav-item">
-                    <button class="nav-link bg-btn" style="color: #fff;"  >ARABIC</button>
-                  </li>
+                  
+                 
+                 
                 </ul>
+               
                 
               </div>
+              <ul class="nav navbar-nav navbar-right">
+               
+                <li class="nav-item">
+                 <a class="nav-link login"  style="color: #fff;" > <button type="button"style="background-color: #233d7b;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa fa-user"></i>&nbsp; Login
+                </button></a>
+                </li>
+            </ul>
             </div>
           </nav>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form action="" class="needs-validation" novalidate>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="validationCustomEmail" placeholder="name@example.com"name="email" required>
+          <div class="invalid-feedback">
+            Please choose a email.
+          </div>
+        </div>
+        <div class="col-auto">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input type="password" class="form-control" id="validationCustom05" placeholder="Password"name="pswd" required>
+          <div class="invalid-feedback">
+            Please provide a valid password.
+          </div>
+        </div>
+      </div>
 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit"style="background-color: #233d7b;" class="btn btn-primary">Submit</button>
+        <a class="nav-link login"  style="color: #fff;" > <button type="button"style="background-color: #233d7b;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+           Sign up
+        </button></a>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
 
     </header>
     <div><br><br></div>
@@ -71,7 +107,7 @@
       </div>
       <div class="carousel-inner ">
         <div class="carousel-item active">
-          <img src="images/images.png " class="d-block w-100"style="height: 360px;" alt="...">
+          <img src="images/pexels-photo-3183197.jpeg " class="d-block w-100"style="height: 360px;" alt="...">
         </div>
         <div class="carousel-item">
           <img src="images/photo-1578091879915-33ee869e2cd7.jfif" class="d-block w-100" style="height: 360px;"  alt="...">
@@ -90,56 +126,13 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="column">
-      <div>
-        <div class="cards">
-        <div class="one">
-          
-          <img src="images/تنزيل.png" width="50px" alt=""> <nav style="--bs-breadcrumb-divider: ':';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">Type</li>
-              <li class="breadcrumb-item active" aria-current="page">Intership</li>
-              <li class="breadcrumb-item active" aria-current="page">Time</li>
-              <div class="heart">
-              <li class="breadcrumb-item active" aria-current="page">3 Years ago</li>
-              <i class="fa fa-heart" ></i>
-            </div>
-            </ol>
-          </nav>
-        </div>
-          <h5 class="card-title">IOS ENGINEER BUCKUP</h5>
-          <p class="card-text">the pest job for this month we will do it</p>
-        </div>
-       
-        <div></div>
-        <div></div>
-        <div></div>
+    
+      <div class="  justify-content-center align-items-center">
+          <div class="col-md-8 input-group">
+              <div class="search input-group-text"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Find a job"> <input type="text" aria-label="Location" class="form-control"placeholder="Location"><button style="background-color: #233d7b;" class="btn btn-primary">Search</button> </div>
+          </div>
       </div>
-      <div>
-        <table class="table">
-          <thead>
-            <tr class="table-light">
-              <th scope="col">Categories</th>
-              
-            </tr>
-          <tbody>
-            <tr class="table-light">
-              <th scope="row">Programming</th>
-             
-            </tr>
-            <tr class="table-light">
-              <th scope="row">Business markting</th>
-              
-            </tr>
-            <tr>
-              <th scope="row">Designer</th>
-             
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-    </div>
+ 
     <div class="title"><h2>Latest jobs</h2></div>
     <div class="flex">
       
@@ -183,6 +176,12 @@
         
       </div>
     </div>
+    <div class="d-flex justify-content-around">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <footer>
 <form action="" class="margin"  ><div class="row g-3  ">
 
@@ -204,7 +203,7 @@
     <li>google</li>
     <li>facebook</li>
   </ul></div>
-  <div class="text"><h4 style="color: #fb236a;">Jobs</h4>
+  <div class="text"><h4 style="color: #fbe523;">Jobs</h4>
   <p class="text-wrap">this the place where you find your job, you wanted.</p><div>
     <i class="fa fa-facebook"></i>
     <i class="fa fa-twitter"></i>
@@ -221,5 +220,27 @@
 </div>
 <div class="copy"><p>all reverse Jobs company &copy copyright 2022</p></div>
     </footer>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
 </body>
 </html>
