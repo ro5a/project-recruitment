@@ -20,7 +20,8 @@ padding: 10px;
     margin: 10px;
 }
 .title{
-    margin: 40px;
+text-align: center;
+margin: 40px;
 }
 .row{
     width: 80%;
@@ -51,7 +52,28 @@ list-style: none;
   
 }
 .margin{
-    margin-left: 200px;
+    margin-left: 90px;
     margin-top: 40px;
 
+}
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+.one{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.cards{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding:10px;
+}
+.heart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
