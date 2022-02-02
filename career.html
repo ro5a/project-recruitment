@@ -41,7 +41,7 @@
 
                 
                   <li class="nav-item">
-                    <a class="nav-link"  style="color: #fff;" href="#">Contuct us</a>
+                    <a class="nav-link"  style="color: #fff;" href="contuct.html">Contuct us</a>
                   </li>
                   
                  
@@ -92,7 +92,13 @@
 
     </header>
     <br><br><br>
-    <div class="ms-5 mt-5"><h2>Recommended jobs</h2></div>
+    <div class="ms-5 mt-5"><h2>Recommended jobs</h2> 
+      <nav class="navbar navbar-light justify-content-center mt-4">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="search job" aria-label="Search" class="">
+          
+        </form>
+      </nav></div>
     <div class="container mt-5 mb-3">
       <div class="row">
           <div class="col-md-4">
@@ -240,6 +246,7 @@
   </div>
   
 </div>
+
   </div>
     <footer>
 <br><br>
@@ -266,5 +273,15 @@
 </div>
 <div class="copy"><p>all reverse Jobs company &copy copyright 2022</p></div>
     </footer>
+    <script>
+$(document).ready(function(){
+  $('.searchbox-input').on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".card").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 </body>
 </html>
