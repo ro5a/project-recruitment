@@ -108,10 +108,7 @@ list-style: none;
     left: 50%;
     transform: translatex(-50%);
 }
-html,
-body {
-    overflow-x: hidden
-}
+
 
 * {
     margin: 0;
@@ -120,31 +117,6 @@ body {
     font-family: helvetica;
     font-weight: 300
 }
-
-a,
-button {
-    display: inline-block;
-    padding: 14px 30px;
-    text-decoration: none;
-    color: #243342;
-    letter-spacing: 1.2px;
-    font-size: 14px;
-    border: 1px solid #243342;
-    border-radius: 7px;
-    margin-right: 20px;
-    transition: 0.15s ease-in-out
-}
-
-a.focus,
-button {
-    color: white;
-    background: #243342
-}
-
-
-
-
-
 
 
 
@@ -265,7 +237,7 @@ button {
     padding: 20px
 }
 
-h2 {}
+
 
 .info h2 {
     color: #fed85d;
@@ -303,13 +275,13 @@ h2 {}
 }
 
 .svg-wrap a:hover svg {
-    fill: #16f1dc;
+    fill: #fed85d;
     cursor: pointer
 }
 
 .svg-wrap a:hover {
     background-color: transparent;
-    color: #16f1dc;
+    color: #fed85d;
     cursor: pointer
 }
 
@@ -319,10 +291,7 @@ h2 {}
         display: block
     }
 
-    .map {
-        display: none
-    }
-
+   
     .contact {
         width: 100%;
         flex-direction: column-reverse;
@@ -346,40 +315,3 @@ h2 {}
     }
 }
 
-@media screen and (max-width: 660px) {
-    nav .hamburger {
-        opacity: 1;
-        pointer-events: initial
-    }
-
-    nav div.linkWrapper {
-        top: 0;
-        right: 0;
-        position: fixed;
-        height: 100vh;
-        background-color: rgba(36, 51, 66, 0.9);
-        display: flex;
-        flex-direction: column;
-        padding: 10px 0;
-        box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.3);
-        width: 100%;
-        justify-content: center;
-        will-change: transform;
-        opacity: 0;
-        display: none;
-        pointer-events: none;
-        transition: opacity 0.3s ease-in-out
-    }
-
-    nav div a {
-        color: white;
-        text-decoration: none;
-        display: inline-block;
-        font-weight: 300;
-        letter-spacing: 1.5;
-        width: 100%;
-        margin-bottom: 31px;
-        text-align: center;
-        font-size: 38px
-    }
-}
