@@ -136,7 +136,7 @@
                                     <div class="input-group">
                                         <input type="text" class="form-control bg-light border-0 small"
                                             placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2" id="myInput" onkeyup="myFunction()">
+                                            aria-describedby="basic-addon2" id="myInput">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -204,7 +204,7 @@
 
                             <form action="">
                                 <table id="myTable" class="table">
-                                    <thead>
+                                    <thead >
                                       <tr>
                                         <th>The Year</th>
                                         <th>the job</th>
@@ -213,7 +213,7 @@
                                         
                                       </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody id="myTable">
                                       <tr>
                                         <td>2020</td>
                                         <td>Photoshop deasign</td>
@@ -307,25 +307,16 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script>
-        function myFunction() {
-          var input, filter, table, tr, td, i, txtValue;
-          input = document.getElementById("myInput");
-          filter = input.value.toUpperCase();
-          table = document.getElementById("myTable");
-          tr = table.getElementsByTagName("tr");
-          for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-              txtValue = td.textContent || td.innerText;
-              if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-              } else {
-                tr[i].style.display = "none";
-              }
-            }       
-          }
-        }
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
         </script>
+        
         
     </div>
     </div>
