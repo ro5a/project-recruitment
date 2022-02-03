@@ -76,19 +76,6 @@
   }
 }
 
-body {
-  margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
-  line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
-  text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -159,14 +146,7 @@ p {
   margin-bottom: 1rem;
 }
 
-abbr[title],
-abbr[data-bs-original-title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  cursor: help;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-}
+
 
 address {
   margin-bottom: 1rem;
@@ -266,33 +246,10 @@ pre {
   overflow: auto;
   font-size: 0.875em;
 }
-pre code {
-  font-size: inherit;
-  color: inherit;
-  word-break: normal;
-}
 
-code {
-  font-size: 0.875em;
-  color: #d63384;
-  word-wrap: break-word;
-}
-a > code {
-  color: inherit;
-}
 
-kbd {
-  padding: 0.2rem 0.4rem;
-  font-size: 0.875em;
-  color: #fff;
-  background-color: #212529;
-  border-radius: 0.2rem;
-}
-kbd kbd {
-  padding: 0;
-  font-size: 1em;
-  font-weight: 700;
-}
+
+
 
 figure {
   margin: 0 0 1rem;

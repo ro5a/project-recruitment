@@ -136,7 +136,7 @@
                                     <div class="input-group">
                                         <input type="text" class="form-control bg-light border-0 small"
                                             placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
+                                            aria-describedby="basic-addon2" id="myInput" onkeyup="myFunction()">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -237,7 +237,7 @@
                            
 
                             <form action="">
-                                <table class="table">
+                                <table id="myTable" class="table">
                                     <thead>
                                       <tr>
                                         <th>The Year</th>
@@ -293,6 +293,8 @@
                 <!-- /.container-fluid -->
 
             </div>
+            </div>
+            
             <!-- End of Main Content -->
             <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -338,6 +340,27 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+        </script>
+        
     </div>
     </div>
     </body>
